@@ -296,7 +296,7 @@ class _SparklinePainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     double width = size.width - lineWidth;
     final double height = size.height - lineWidth;
-    final double heightNormalizer = height / max(1,(_max - _min));
+    final double heightNormalizer = height / math.max(1,(_max - _min));
     print("It's my sparkline!");
 
     final Path path = new Path();
